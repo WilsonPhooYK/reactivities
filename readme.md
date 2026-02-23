@@ -35,3 +35,4 @@ dotnet ef database drop -p Persistence -s API
 
 Source Control
 git branch -M main
+git remote add origin https://github.com/WilsonPhooYK/reactivities.git
