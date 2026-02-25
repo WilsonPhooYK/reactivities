@@ -36,3 +36,15 @@ dotnet ef database drop -p Persistence -s API
 Source Control
 git branch -M main
 git remote add origin https://github.com/WilsonPhooYK/reactivities.git
+
+https://transform.tools/json-to-typescript
+
+https://chromewebstore.google.com/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en&pli=1
+
+Settings > Search Link Editing
+
+### For CORS
+npm install -D vite-plugin-mkcert
+
+\API> dotnet dev-certs https --clean
+dotnet dev-certs https --trust
