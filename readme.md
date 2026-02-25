@@ -48,3 +48,12 @@ npm install -D vite-plugin-mkcert
 
 \API> dotnet dev-certs https --clean
 dotnet dev-certs https --trust
+
+### MediatR NUGET
+Add 12.4.1 to Application
+
+### AutoMapper NUGET
+Add 13.0.1 to Application
+
+### Debugging
+Add launch.json

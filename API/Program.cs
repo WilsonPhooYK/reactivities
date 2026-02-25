@@ -1,3 +1,5 @@
+using Application.Activities.Queries;
+using Application.Core;
 using Microsoft.EntityFrameworkCore;
 using Persistence;
 
@@ -12,6 +14,11 @@ builder.Services.AddDbContext<AppDbContext>(opt =>
 });
 // Add Cors
 builder.Services.AddCors();
+// When we use 'RegisterServicesFromAssemblyContaining" then all the handlers from that assembly
+// (the Application.dll in this case) will be registered so we only need to do this for one handler here.
+// Adding additional registers is not necessary here.
+builder.Services.AddMediatR(x => x.RegisterServicesFromAssemblyContaining<GetActivityList.Handler>());
+builder.Services.AddAutoMapper(typeof(MappingProfiles).Assembly);
 
 var app = builder.Build();
 
